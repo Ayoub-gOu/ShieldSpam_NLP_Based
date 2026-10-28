@@ -33,8 +33,8 @@ Anti-Spam-project/
 Prerequisites: Python 3.10+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-git clone <repo-url>
-cd Anti-Spam-project
+git clone https://github.com/Ayoub-gOu/ShieldSpam_NLP_Based
+cd ShieldSpam_NLP_Based
 uv sync
 ```
 
