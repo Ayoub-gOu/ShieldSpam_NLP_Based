@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Spam Filter Demo",
+  "version": "0.2",
+  "description": "Checks the open Gmail email with the spam filter API.",
+  "action": { "default_popup": "popup.html" },
+  "host_permissions": ["http://127.0.0.1:8000/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
